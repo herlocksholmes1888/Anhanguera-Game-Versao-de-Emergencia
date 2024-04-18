@@ -4,7 +4,6 @@ public class SandraSuporte extends Personagem {
 
 	public SandraSuporte(String nome, int satisfacao) {
 		super(nome, satisfacao);
-		
 	}
 
 	@Override
