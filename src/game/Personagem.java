@@ -1,6 +1,6 @@
 package game;
 
-public class Personagem {
+public abstract class Personagem {
 	
 	private String nome;
 	private int satisfacao;
@@ -26,7 +26,6 @@ public class Personagem {
 		return nome;
 	}
 	
-	public void gameOver() {
-		System.out.println("Você perdeu.");
-	}
+	public abstract void variarSatisfacao();
+	public abstract void gameOver();
 }
