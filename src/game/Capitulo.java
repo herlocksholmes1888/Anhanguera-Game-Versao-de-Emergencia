@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Capitulo {
+	
 	private int numeroCapitulo;
 	private String tituloCapitulo;
 	private List<String> dialogos;

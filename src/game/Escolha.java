@@ -1,6 +1,7 @@
 package game;
 
 public class Escolha {
+	
 	private int indexEscolha;
 	private int mudancaSatisfacao;
 	
