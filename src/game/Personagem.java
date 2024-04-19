@@ -26,6 +26,8 @@ public abstract class Personagem {
 		return nome;
 	}
 	
+	// Retorna o valor de nome em String. Senão, o formato seria:
+	// game.Personagem@1b0375b3: Diálogo
     @Override
     public String toString() {
         return nome;
