@@ -1,4 +1,5 @@
 package game;
+import java.util.Scanner;
 
 public class Main {
 
@@ -23,6 +24,22 @@ public class Main {
 		
 		Dialogo fala3 = new Dialogo(ply, "... Obrigado, Sandra...");
 		fala3.mostrarDialogo();
+		
+		Scanner scanEscolha1 = new Scanner(System.in);
+		String escolha1;
+		System.out.printf("[1] LER A CARTA\n[2] PEDIR PARA RESUMIR\n");
+		escolha1 = scanEscolha1.nextLine();
+		
+		switch(escolha1) {
+			case "1":
+				System.out.println("Lendo...");
+				break;
+			case "2":
+				System.out.println("Resumindo...");
+				break;
+			default:
+				System.out.println("Input inválido");
+		}
 		
 		// LEVEL 2: MALSUCESSO
 		

@@ -15,11 +15,6 @@ public class Monologo {
 		return monologo;
 	}
 	
-	@Override
-	public String toString() {
-		return monologo;
-	}
-	
 	public void mostrarMonologo() {
 		System.out.println(monologo);
 	}
