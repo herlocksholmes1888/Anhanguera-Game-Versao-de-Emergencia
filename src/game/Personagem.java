@@ -26,6 +26,11 @@ public abstract class Personagem {
 		return nome;
 	}
 	
+    @Override
+    public String toString() {
+        return nome;
+    }
+	
 	public void variarSatisfacao(int consequencias) {
 		int satisfacaoAntes = getSatisfacao();
 		int satisfacaoDepois = satisfacaoAntes - consequencias;

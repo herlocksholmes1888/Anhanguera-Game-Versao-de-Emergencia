@@ -10,6 +10,8 @@ public class Main {
 		FloraSilva flo = new FloraSilva("FLORA DA SILVA", 3);
 		
 		// LEVEL 1: CONTRA A CORRENTE
+		Dialogo fala1 = new Dialogo(san, "Testando");
+		fala1.mostrarDialogo();
 		
 		// LEVEL 2: MALSUCESSO
 		

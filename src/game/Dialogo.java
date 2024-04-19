@@ -2,20 +2,20 @@ package game;
 
 public class Dialogo {
 	
-	private String nomePersonagem;
+	private Personagem nome;
 	private String dialogo;
 	
-	public Dialogo(String nomePersonagem, String dialogo) {
-		this.setNomePersonagem(nomePersonagem);
+	public Dialogo(Personagem nome, String dialogo) {
+		this.setNomePersonagem(nome);
 		this.setDialogo(dialogo);
 	}
 	
-	public void setNomePersonagem(String nomePersonagem) {
-		this.nomePersonagem = nomePersonagem;
+	public void setNomePersonagem(Personagem nome) {
+		this.nome = nome;
 	}
 	
-	public String getNomePersonagem() {
-		return nomePersonagem;
+	public Personagem getNomePersonagem() {
+		return nome;
 	}
 	
 	public void setDialogo(String dialogo) {
@@ -27,6 +27,6 @@ public class Dialogo {
 	}
 	
 	public void mostrarDialogo() {
-		System.out.println(nomePersonagem + ": " + dialogo);
+		System.out.println(nome + ": " + dialogo);
 	}
 }
