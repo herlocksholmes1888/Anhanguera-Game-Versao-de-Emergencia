@@ -32,11 +32,22 @@ public class Main {
 		
 		switch(interacaoUsuario1) {
 			case "1":
-				System.out.println("Lendo...");
+				Dialogo falaEscolhaUm1 = new Dialogo(ply, "Me dê a carta, por favor.");
+				falaEscolhaUm1.mostrarDialogo();
+				
+				san.variarSatisfacao(1,  true);		
+				Dialogo falaEscolhaUm2 = new Dialogo(san, "Ora, então o candidato sabe ler! Tó a carta.");
+				falaEscolhaUm2.mostrarDialogo();
+				
 				break;
 			case "2":
+				Dialogo falaEscolhaDois1 = new Dialogo(ply, "Eu estou muito ocupado. Poderia lê-la para mim, por favor?");
+				falaEscolhaDois1.mostrarDialogo();
+				
 				san.variarSatisfacao(1, false);
-				System.out.println(san.getSatisfacao());
+				Dialogo falaEscolhaDois2 = new Dialogo(san, "... A gente vota no candidato achando que ele sabe ler...");
+				falaEscolhaDois2.mostrarDialogo();
+				
 				break;
 			default:
 				System.out.println("Input inválido");
