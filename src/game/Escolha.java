@@ -2,20 +2,10 @@ package game;
 
 public class Escolha {
 	
-	private int indexEscolha;
 	private int mudancaSatisfacao;
 	
-	public Escolha(int indexEscolha) {
-		this.setIndexEscolha(indexEscolha);
+	public Escolha() {
 		this.setMudancaSatisfacao(mudancaSatisfacao);
-	}
-	
-	public void setIndexEscolha(int indexEscolha) {
-		this.indexEscolha = indexEscolha;
-	}
-	
-	public int getIndexEscolha() {
-		return indexEscolha;
 	}
 	
 	public void setMudancaSatisfacao(int mudancaSatisfacao) {
