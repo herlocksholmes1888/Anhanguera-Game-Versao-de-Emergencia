@@ -35,7 +35,7 @@ public class Main {
 				System.out.println("Lendo...");
 				break;
 			case "2":
-				san.variarSatisfacao(1);
+				san.variarSatisfacao(1, false);
 				System.out.println(san.getSatisfacao());
 				break;
 			default:

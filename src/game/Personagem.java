@@ -33,9 +33,10 @@ public abstract class Personagem {
         return nome;
     }
 	
-	public void variarSatisfacao(int consequencias) {
+	public void variarSatisfacao(int consequencias, boolean adicao) {
 		int satisfacaoAntes = getSatisfacao();
-		int satisfacaoDepois = satisfacaoAntes - consequencias;
+		int operacao = adicao ? consequencias : -consequencias;
+		int satisfacaoDepois = satisfacaoAntes + operacao;
 		setSatisfacao(satisfacaoDepois);
 	}
 	
