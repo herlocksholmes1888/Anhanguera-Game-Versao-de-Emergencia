@@ -8,11 +8,6 @@ public class RicardoBonsucesso extends Personagem {
 	}
 
 	@Override
-	public void variarSatisfacao() {
-		
-	}
-
-	@Override
 	public void gameOver() {
 		System.out.println("Eu entendo melhor agora o que Sandra quis dizer quando me chamou de idealista. Só um louco não teria previsto o que aconteceu. Eu só nunca vou entender por que ela não me desdenhou quando disse aquilo... Talvez gostasse dessa característica em mim.");
 		

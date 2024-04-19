@@ -26,6 +26,11 @@ public abstract class Personagem {
 		return nome;
 	}
 	
-	public abstract void variarSatisfacao();
+	public void variarSatisfacao(int consequencias) {
+		int satisfacaoAntes = getSatisfacao();
+		int satisfacaoDepois = satisfacaoAntes - consequencias;
+		setSatisfacao(satisfacaoDepois);
+	}
+	
 	public abstract void gameOver();
 }

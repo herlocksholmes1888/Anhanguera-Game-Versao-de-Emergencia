@@ -8,11 +8,6 @@ public class Player extends Personagem {
 	}
 
 	@Override
-	public void variarSatisfacao() {
-		
-	}
-
-	@Override
 	public void gameOver() {
 		
 	}

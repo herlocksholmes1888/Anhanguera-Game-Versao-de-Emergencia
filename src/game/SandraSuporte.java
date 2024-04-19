@@ -7,11 +7,6 @@ public class SandraSuporte extends Personagem {
 	}
 
 	@Override
-	public void variarSatisfacao() {
-
-	}
-
-	@Override
 	public void gameOver() {
 		System.out.println("Esse escritório tá numa zorra geral. Eu deveria demitir aquela...");
 		

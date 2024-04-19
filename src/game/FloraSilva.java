@@ -8,11 +8,6 @@ public class FloraSilva extends Personagem {
 	}
 
 	@Override
-	public void variarSatisfacao() {
-		
-	}
-
-	@Override
 	public void gameOver() {
 		System.out.println("Faz muito tempo desde a última vez em que vi uma árvore por aqui. Faz muito tempo desde a última vez em que vi uma árvore nessa região metropolitana inteira.");
 		
