@@ -8,9 +8,9 @@ public class Main {
 		
 		// DECLARAÇÃO DOS PERSONAGENS
 		Player ply = new Player("WASHINGTON LUÍS", 0);
-		SandraSuporte san = new SandraSuporte("SANDRA SUPORTE", satisfacao);
-		RicardoBonsucesso bon = new RicardoBonsucesso("RICARDO BONSUCESSO", satisfacao);
-		FloraSilva flo = new FloraSilva("FLORA DA SILVA", satisfacao);
+		Secretaria san = new Secretaria("SANDRA SUPORTE", satisfacao);
+		Industrial bon = new Industrial("RICARDO BONSUCESSO", satisfacao);
+		Ambientalista flo = new Ambientalista("FLORA DA SILVA", satisfacao);
 		
 		// LEVEL 1: CONTRA A CORRENTE
 		Dialogo fala1 = new Dialogo(san, "Seu Prefeito, chegou uma carta pra você! Parece que é de uma das vítimas da enchente, uma tal de Flora.");
@@ -36,7 +36,7 @@ public class Main {
 				falaEscolhaUm1.mostrarDialogo();
 				
 				san.variarSatisfacao(1,  true);		
-				Dialogo falaEscolhaUm2 = new Dialogo(san, "Ora, então o candidato sabe ler! Tó a carta.");
+				Dialogo falaEscolhaUm2 = new Dialogo(san, "Ora, então o candidato sabe ler! Toma a carta!");
 				falaEscolhaUm2.mostrarDialogo();
 				
 				break;
