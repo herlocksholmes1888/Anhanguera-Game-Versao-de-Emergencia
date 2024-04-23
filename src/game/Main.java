@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		// VARIÁVEIS GLOBAIS
 		int satisfacao = 3;
 		
 		// DECLARAÇÃO DOS PERSONAGENS
@@ -89,6 +90,39 @@ public class Main {
 				san.variarSatisfacao(1,  false);
 				Dialogo defaultCase5 = new Dialogo(san, "Eu não acredito que trabalho pra você.");
 				defaultCase5.mostrarDialogo();
+		}
+		
+		Dialogo fala4 = new Dialogo(san, "O que você vai fazer?");
+		fala4.mostrarDialogo();
+		
+		Dialogo fala5 = new Dialogo(ply, "Não tá na cara? A gente tem que ajudar essa menina.");
+		fala5.mostrarDialogo();
+		
+		Dialogo fala6 = new Dialogo(san, "Você não pode tomar essas decisões assim! Você já se esqueceu? Tudo que os Ambientalistas te pedirem, os Industriais vão querer o oposto! E, entre os dois, são os Industriais que podem te tirar da prefeitura. Confia em mim: a última coisa que tu quer é uma entrevista privada com o Seu Bonsucesso.");
+		fala6.mostrarDialogo();
+		
+		Dialogo fala7 = new Dialogo(ply, "E por que ele ficaria com raiva de mim por cuidar da drenagem? Desde quando foi ele quem teve a ideia de fazer casa na periferia?");
+		fala7.mostrarDialogo();
+		
+		Dialogo fala8 = new Dialogo(san, "... Ah. Ah é, eu brisei. Bem, fica o aviso pra próxima.");
+		fala8.mostrarDialogo();
+		
+		Scanner scanInteracaoUsuario2 = new Scanner(System.in);
+		String interacaoUsuario2;
+		System.out.printf("[1] AUMENTAR O ORÇAMENTO PARA A DRENAGEM \n[2] AUMENTAR O ORÇAMENTO PARA A RECICLAGEM\n [3] ENVIAR AJUDA COMUNITÁRIA \n [4] NADA\n");
+		interacaoUsuario2 = scanInteracaoUsuario2.nextLine();
+		
+		switch(interacaoUsuario2) {
+			case "1":
+				break;
+			case "2":
+				break;
+			case "3":
+				break;
+			case "4":
+				break;
+			default:
+				break;
 		}
 		
 		// LEVEL 2: MALSUCESSO
