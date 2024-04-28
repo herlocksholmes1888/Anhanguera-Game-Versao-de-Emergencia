@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		// VARIÁVEIS GLOBAIS
 		int satisfacao = 3;
-		
+		 
 		// DECLARAÇÃO DOS PERSONAGENS
 		Player ply = new Player("WASHINGTON LUÍS", 0);
 		Secretaria san = new Secretaria("SANDRA SUPORTE", satisfacao);
