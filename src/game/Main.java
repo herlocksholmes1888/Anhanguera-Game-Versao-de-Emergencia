@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// VARIÁVEIS GLOBAIS
+		// VARIÁVEIS GLOBAIS/CONSTANTES
+		Monologo interludio = new Monologo("ALGUM TEMPO DEPOIS...");
 		int satisfacao = 3;
 		 
 		// DECLARAÇÃO DOS PERSONAGENS
@@ -238,13 +239,11 @@ public class Main {
 		Dialogo fimCapitulo1 = new Dialogo(ply, "Eu só espero que tudo dê certo...");
 		fimCapitulo1.mostrarDialogo();
 		
-		Monologo interludio1 = new Monologo("ALGUM TEMPO DEPOIS...");
-		
 		if (san.getSatisfacao() <= 0) {
-			interludio1.mostrarMonologo();
+			interludio.mostrarMonologo();
 			san.gameOver();
 		} else if (flo.getSatisfacao() <= 0) {
-			interludio1.mostrarMonologo();
+			interludio.mostrarMonologo();
 			flo.gameOver();
 		}
 		
