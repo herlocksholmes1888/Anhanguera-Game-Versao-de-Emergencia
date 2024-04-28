@@ -38,6 +38,12 @@ public abstract class Personagem {
 		int operacao = adicao ? consequencias : -consequencias;
 		int satisfacaoDepois = satisfacaoAntes + operacao;
 		setSatisfacao(satisfacaoDepois);
+		
+		if (adicao == true) {
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + (satisfacaoAntes - satisfacaoDepois) + " PONTO(S) POSITIVO(S)");
+		} else {
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + (satisfacaoAntes - satisfacaoDepois) + " PONTO(S) NEGATIVO(S)");
+		}
 	}
 	
 	public abstract void gameOver();

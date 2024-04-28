@@ -16,6 +16,6 @@ public class Secretaria extends Personagem {
 						"E depois de me impeachmar? Não sei o que ela vai fazer. Ela não vai ficar do lado deles, essa é a minha única certeza. Talvez ela se una aos Ambientalistas depois que eu meter o pé.\n" +
 						"O que posso fazer a partir de agora é tentar me redimir com ela nesses últimos dias de governo. Depois, quando eu já for um desempregado, pensarei no meu próximo passo.\n"
 						);
-		//System.out(0);
+		System.exit(0);
 	}
 }

@@ -15,6 +15,6 @@ public class Ambientalista extends Personagem {
 						   "Eu prometi que nunca chegaria a esse ponto, e fui eu quem permitiu que chegasse.\n" +
 							"... Eu nunca pensei que fosse virar prefeito de uma cidade fantasma...\n"
 						  );
-		// System.exit(0);
+		System.exit(0);
 	}
 }
