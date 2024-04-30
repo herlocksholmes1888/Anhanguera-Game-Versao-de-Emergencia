@@ -55,7 +55,6 @@ public class Main {
 				
 				Dialogo falaEscolhaUm4 = new Dialogo(ply, "S-só deletando a minha localização.");
 				falaEscolhaUm4.mostrarDialogo();
-				
 				break;
 			case "2":
 				Dialogo falaEscolhaDois1 = new Dialogo(ply, "Eu estou muito ocupado. Poderia lê-la para mim, por favor?");
@@ -76,7 +75,6 @@ public class Main {
 				
 				Dialogo falaEscolhaDois6 = new Dialogo(san, "E era umas casas baratas, também, daquelas que chamam a atenção de pobre que não tem escolha mesmo. A Flora foi morar lá e deu no que deu.");
 				falaEscolhaDois6.mostrarDialogo();
-				
 				break;
 			default:
 				Dialogo defaultCase1 = new Dialogo(san, "Vai ficar me encarando com essa cara de bezerro perdido?");
@@ -97,7 +95,6 @@ public class Main {
 				
 				Dialogo defaultCase6 = new Dialogo(san, "É claro que é uma reclamação! Reclamação da enchente que rolou esses dias na periferia! O que mais seria?");
 				defaultCase6.mostrarDialogo();
-				
 				break;
 		}
 		
@@ -145,7 +142,6 @@ public class Main {
 				
 				Dialogo falaEscolhaUm7 = new Dialogo(san, "A gente vota no candidato achando que ele sabe falar ao telefone...");
 				falaEscolhaUm7.mostrarDialogo();
-				
 				break;
 			case "2":
 				flo.variarSatisfacao(2, true);
@@ -164,7 +160,6 @@ public class Main {
 				
 				Dialogo falaEscolhaDois5 = new Dialogo(ply, "Desculpa.");
 				falaEscolhaDois5.mostrarDialogo();
-				
 				break;
 			case "3":
 				flo.variarSatisfacao(1, true);
@@ -198,7 +193,6 @@ public class Main {
 				
 				Dialogo falaEscolhaTres10 = new Dialogo(san, "Não ia ser muito distante da realidade.");
 				falaEscolhaTres10.mostrarDialogo();
-				
 				break;
 			case "4":
 				flo.variarSatisfacao(2, false);
@@ -214,7 +208,6 @@ public class Main {
 				
 				Dialogo falaEscolhaQuatro4 = new Dialogo(san, "Talvez alguma coisa útil com a sua vida, pra dar uma variada.");
 				falaEscolhaQuatro4.mostrarDialogo();
-				
 				break;
 			default:
 				flo.variarSatisfacao(1, false);
@@ -232,7 +225,6 @@ public class Main {
 				
 				Dialogo falaCaseDefault4 = new Dialogo(san, "Pois você tem razão!");
 				falaCaseDefault4.mostrarDialogo();
-				
 				break;
 		}
 		
@@ -284,7 +276,6 @@ public class Main {
 				
 				Dialogo falaEscolhaUm6 = new Dialogo(ply, "... Tudo bem. O que temos em pauta?");
 				falaEscolhaUm6.mostrarDialogo();
-				
 				break;
 			case "2":
 				Dialogo falaEscolhaDois1 = new Dialogo(ply, "O que que eu fiz pra irritar o Sr. Bonsucesso?");
@@ -318,14 +309,143 @@ public class Main {
 				
 				Dialogo falaEscolhaDois10 = new Dialogo(ply, "Tudo bem, o que temos em pauta?");
 				falaEscolhaDois10.mostrarDialogo();
+				break;
+			default:
+				break;
+		}
+		
+		Dialogo fala12 = new Dialogo(bon, "Queria tratar de búsiniss, uma parte da prodúcciom das interpraises está sempre sendo usada for uma tal de ressaikle.");
+		fala12.mostrarDialogo();
+		
+		Monologo monologo2 = new Monologo("Acho que esse é o final boss da Fisk.\nEspera... ressaikle? Ele quer dizer recicling??\nEsse cara quer que eu deixe ele poluir e ferrar mais a cidade por nada? Ele tem que tá de brinqueixom uíti me!");
+		monologo2.mostrarMonologo();
+		
+		Dialogo fala13 = new Dialogo(ply, "Vou ver o que eu posso fazer.");
+		fala13.mostrarDialogo();
+		
+		Dialogo fala14 = new Dialogo(bon, "Mesmo? Seria uma pena se você fizesse uma promise pra um búsinessmên como me sem cumprir. Muitas pipou já tentaram, iú nou? Bocú de pipou.");
+		fala14.mostrarDialogo();
+		
+		Dialogo fala15 = new Dialogo(ply, "Não entendo como isso possa ser relevante, mas também levarei isso em consideração, Sr. Bonsucesso.");
+		fala15.mostrarDialogo();
+		
+		Monologo monologo3 = new Monologo("Ele foi embora, graças a Deus! Se eu tivesse que ouvir mais uma frase em franglés brasileiro, eu juro que eu não sobreviveria. Talvez exista um Deus afinal!");
+		monologo3.mostrarMonologo();
+		
+		Dialogo fala16 = new Dialogo(san, "Então, o que aquele porco de terno queria?");
+		fala16.mostrarDialogo();
+		
+		Monologo monologo4 = new Monologo("E eu sigo sendo agnóstico...");
+		monologo4.mostrarMonologo();
+		
+		Dialogo fala17 = new Dialogo(ply, "Quer estragar mais a cidade, quer tirar uma parte da verba destinada à reciclagem e reciclar no bolso dele.");
+		fala17.mostrarDialogo();
+		
+		Dialogo fala18 = new Dialogo(san, "E o que você vai fazer?");
+		fala18.mostrarDialogo();
+		
+		Scanner scanInteracaoUsuario4 = new Scanner(System.in);
+		String interacaoUsuario4;
+		System.out.printf("[1] REDUZIR A VERBA DE RECICLAGEM EM 80%\n[2] REDUZIR A VERBA DE RECICLAGEM EM 50%\n[3] REDUZIR A VERBA DE RECICLAGEM EM 25%\n[4] NADA\n");
+		interacaoUsuario4 = scanInteracaoUsuario4.nextLine();
+		
+		switch(interacaoUsuario4) {
+			case "1":
+				Dialogo falaEscolhaUm1 = new Dialogo(ply, "Bom, não tem o que fazer senão tirar os incentivos de reciclagem, pelo menos parcialmente.");
+				falaEscolhaUm1.mostrarDialogo();
 				
+				bon.variarSatisfacao(3, true);
+				flo.variarSatisfacao(2, false);
+				san.variarSatisfacao(1, false);
+				
+				Dialogo falaEscolhaUm2 = new Dialogo(san, "...");
+				falaEscolhaUm2.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm3 = new Dialogo(ply, "O quê?");
+				falaEscolhaUm3.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm4 = new Dialogo(san, "Nada, só mais do mesmo");
+				falaEscolhaUm4.mostrarDialogo();
+				break;
+			case "2":
+				Dialogo falaEscolhaDois1 = new Dialogo(ply, "Acho que posso tentar fazer um agradinho.");
+				falaEscolhaDois1.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois2 = new Dialogo(san, "O que tem em mente? Além de vento.");
+				falaEscolhaDois2.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois3 = new Dialogo(ply, "Vou reduzir em 50% a verba de reciclagem. Não vai fazer tanto mal. O que você acha?");
+				falaEscolhaDois3.mostrarDialogo();
+				
+				bon.variarSatisfacao(2, true);
+				flo.variarSatisfacao(1, false);
+				san.variarSatisfacao(2, false);
+				
+				Dialogo falaEscolhaDois4 = new Dialogo(san, "Acho que estamos sendo governados por algum tipo de símio.");
+				falaEscolhaDois4.mostrarDialogo();
+				break;
+			case "3":
+				Dialogo falaEscolhaTres1 = new Dialogo(ply, "Esse cara quer por fogo nessa cidade e eu não vou deixar. Ao invés de reduzir a verba de reciclagem em 100%, vou reduzir em 25%. O que pode dar errado?");
+				falaEscolhaTres1.mostrarDialogo();
+				
+				bon.variarSatisfacao(1, true);
+				flo.variarSatisfacao(1, false);
+				
+				Dialogo falaEscolhaTres2 = new Dialogo(san, "Uma outra enchente na periferia, talvez...");
+				falaEscolhaTres2.mostrarDialogo();
+				
+				Dialogo falaEscolhaTres3 = new Dialogo(ply, "O quê?");
+				falaEscolhaTres3.mostrarDialogo();
+				
+				Dialogo falaEscolhaTres4 = new Dialogo(san, "Nada.");
+				falaEscolhaTres4.mostrarDialogo();
+				break;
+			case "4":
+				Dialogo falaEscolhaQuatro1 = new Dialogo(san, "Vai ficar me olhando até quando?");
+				falaEscolhaQuatro1.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro2 = new Dialogo(ply, "Eu não estava te olhando. Eu estava pensando.");
+				falaEscolhaQuatro2.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro3 = new Dialogo(san, "Ah, faz sentido. A tela congelou com tanta informação numa CPU tão antiga.");
+				falaEscolhaQuatro3.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro4 = new Dialogo(ply, "... Eu tenho 31 anos–");
+				falaEscolhaQuatro4.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro5 = new Dialogo(san, "E qual é a solução que o jovem idoso pensou?");
+				falaEscolhaQuatro5.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro6 = new Dialogo(ply, "Nada.");
+				falaEscolhaQuatro6.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro7 = new Dialogo(san, "Como assim nada?");
+				falaEscolhaQuatro7.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro8 = new Dialogo(ply, "Eu não posso arriscar diminuir a verba de reciclagem quando ela já está tão pequena. Imagina quanto saco de lixo a mais você ia ver por aí! Ele quer que as pessoas tenham que pular sacolas de lixo para ir a algum lugar? Mas nem que o Santos volte pra série A.");
+				falaEscolhaQuatro8.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro9 = new Dialogo(san, "Então essa é sua decisão?");
+				falaEscolhaQuatro9.mostrarDialogo();
+				
+				Monologo monologoEscolhaQuatro1 = new Monologo("Ela tá me olhando estranho...");
+				monologoEscolhaQuatro1.mostrarMonologo();
+				
+				Dialogo falaEscolhaQuatro10 = new Dialogo(ply, "Algo contra?");
+				falaEscolhaQuatro10.mostrarDialogo();
+				
+				Dialogo falaEscolhaQuatro11 = new Dialogo(san, "Você é idealista demais pra merecer um voto sério.");
+				
+				Monologo monologoEscolhaQuatro2 = new Monologo("ELA CONSEGUE SORRIR?");
+				monologoEscolhaQuatro2.mostrarMonologo();
+				falaEscolhaQuatro11.mostrarDialogo();
 				break;
 			default:
 				break;
 		}
 		
 		// LEVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO
-		Level level3 = new Level("NÍVEL 3: MALSUCESSO");
+		Level level3 = new Level("NÍVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO");
 		level3.mostrarTitulo();
 	}
 }
