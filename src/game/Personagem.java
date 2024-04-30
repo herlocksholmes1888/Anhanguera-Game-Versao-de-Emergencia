@@ -1,5 +1,7 @@
 package game;
 
+import java.lang.Math;
+
 public abstract class Personagem {
 	
 	private String nome;
@@ -39,10 +41,12 @@ public abstract class Personagem {
 		int satisfacaoDepois = satisfacaoAntes + operacao;
 		setSatisfacao(satisfacaoDepois);
 		
+		int variacao = Math.abs(satisfacaoDepois - satisfacaoAntes);
+		
 		if (adicao == true) {
-			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + (satisfacaoAntes - satisfacaoDepois) + " PONTO(S) POSITIVO(S)");
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacao + " PONTO(S) POSITIVO(S)");
 		} else {
-			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + (satisfacaoAntes - satisfacaoDepois) + " PONTO(S) NEGATIVO(S)");
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacao + " PONTO(S) NEGATIVO(S)");
 		}
 	}
 	

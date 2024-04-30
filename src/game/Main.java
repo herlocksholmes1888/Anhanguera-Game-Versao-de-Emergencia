@@ -248,7 +248,84 @@ public class Main {
 		}
 		
 		// LEVEL 2: MALSUCESSO
+		Level level2 = new Level("NÍVEL 2: MALSUCESSO");
+		level2.mostrarTitulo();
+		
+		Dialogo fala9 = new Dialogo(ply, "Dia novo, vida nova.");
+		fala9.mostrarDialogo();
+		
+		Dialogo fala10 = new Dialogo(san, "Tem um cara estranho querendo falar contigo, ele parece ter algum problema mental grave. É aquele Bonsucesso que eu falei pra você não mexer...");
+		fala10.mostrarDialogo();
+		
+		Dialogo fala11 = new Dialogo(ply, "Ou não. Errei, fui moleque.");
+		fala11.mostrarDialogo();
+		
+		Scanner scanInteracaoUsuario3 = new Scanner(System.in);
+		String interacaoUsuario3;
+		System.out.printf("[1] PEDIR PARA ENTRAR\n[2] EXIGIR EXPLICAÇÕES\n");
+		interacaoUsuario3 = scanInteracaoUsuario3.nextLine();
+		
+		switch(interacaoUsuario3) {
+			case "1":
+				Dialogo falaEscolhaUm1 = new Dialogo(ply, "Pode mandar entrar, Sandra.");
+				falaEscolhaUm1.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm2 = new Dialogo(ply, "Boa tarde senhor Bonsucesso, como pos–");
+				falaEscolhaUm2.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm3 = new Dialogo(bon, "Gud murning amigo, como estais?!");
+				falaEscolhaUm3.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm4 = new Dialogo(ply, "Estou b–");
+				falaEscolhaUm4.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm5 = new Dialogo(bon, "Que beleza, meu friendo, então temos alguns próblémés a tratar!");
+				falaEscolhaUm5.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm6 = new Dialogo(ply, "... Tudo bem. O que temos em pauta?");
+				falaEscolhaUm6.mostrarDialogo();
+				
+				break;
+			case "2":
+				Dialogo falaEscolhaDois1 = new Dialogo(ply, "O que que eu fiz pra irritar o Sr. Bonsucesso?");
+				falaEscolhaDois1.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois2 = new Dialogo(san, "Ele viu que você ajudou a Srta. Silva e agora quer pedir sua ajuda sobre os impostos das fábricas e outros nhemnhemnhem. Industrialistas, sabe. Você realmente deveria se atualizar.");
+				falaEscolhaDois2.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois3 = new Dialogo(ply, "Por que eu precisaria assistir as notícias, se as suas descrições são tão maravilhosamente explicadas e tão ricas em detalhes?");
+				falaEscolhaDois3.mostrarDialogo();
+				
+				san.variarSatisfacao(1, false);
+				
+				Dialogo falaEscolhaDois4 = new Dialogo(san, "Vai tomar no s...");
+				falaEscolhaDois4.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois5 = new Dialogo(bon, "Rélou, mes amis! Vi a door aberta e entrei!");
+				falaEscolhaDois5.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois6 = new Dialogo(san, "So long, goodbye!");
+				falaEscolhaDois6.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois7 = new Dialogo(bon, "Que biutiful empregada vous tenez! E bilíngue também!");
+				falaEscolhaDois7.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois8 = new Dialogo(ply, "Sim, um amor de pessoa...");
+				falaEscolhaDois8.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois9 = new Dialogo(bon, "Ah, mas não temos tempo para falar das mulhérés. Temos alguns próblémés a tratar, monsiê le Prefeité!");
+				falaEscolhaDois9.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois10 = new Dialogo(ply, "Tudo bem, o que temos em pauta?");
+				falaEscolhaDois10.mostrarDialogo();
+				
+				break;
+			default:
+				break;
+		}
 		
 		// LEVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO
+		Level level3 = new Level("NÍVEL 3: MALSUCESSO");
+		level3.mostrarTitulo();
 	}
 }

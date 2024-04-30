@@ -9,7 +9,7 @@ public class Dialogo {
 		this.setNomePersonagem(nome);
 		this.setDialogo(dialogo);
 	}
-	
+	 
 	public void setNomePersonagem(Personagem nome) {
 		this.nome = nome;
 	}
