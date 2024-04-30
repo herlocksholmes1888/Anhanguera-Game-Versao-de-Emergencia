@@ -444,6 +444,17 @@ public class Main {
 				break;
 		}
 		
+		if (san.getSatisfacao() <= 0) {
+			interludio.mostrarMonologo();
+			san.gameOver();
+		} else if (flo.getSatisfacao() <= 0) {
+			interludio.mostrarMonologo();
+			flo.gameOver();
+		} else if (bon.getSatisfacao() <= 0) {
+			interludio.mostrarMonologo();
+			bon.gameOver();
+		}
+		
 		// LEVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO
 		Level level3 = new Level("NÍVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO");
 		level3.mostrarTitulo();
