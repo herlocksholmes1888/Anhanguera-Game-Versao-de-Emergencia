@@ -584,6 +584,16 @@ public class Main {
 		String interacaoUsuario5;
 		System.out.printf("[1] CONCORDAR COM RICARDO BONSUCESSO\n[2]CONCORDAR COM FLORA DA SILVA\n[3] DIZER QUE VAI PENSAR NISSO E NÃO PENSAR NISSO\n");
 		interacaoUsuario5 = scanInteracaoUsuario5.nextLine();
-
+		
+		switch(interacaoUsuario5) {
+			case "1":
+				break;
+			case "2":
+				break;
+			case "3":
+				break;
+			default:
+				break;
+		}
 	}
 }
