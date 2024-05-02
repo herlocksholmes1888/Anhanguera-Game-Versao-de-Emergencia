@@ -237,6 +237,11 @@ public class Main {
 		} else if (flo.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
 			flo.gameOver();
+		} else {
+			System.out.println("EXPEDIENTE ENCERRADO");
+			System.out.println("A satisfação dos Industriais está em: " + bon.getSatisfacao());
+			System.out.println("A satisfação dos Ambientalistas está em: " + flo.getSatisfacao());
+			System.out.println("A satisfação de sua atual secretária está em: " + san.getSatisfacao());
 		}
 		
 		// LEVEL 2: MALSUCESSO
@@ -346,7 +351,7 @@ public class Main {
 		
 		Scanner scanInteracaoUsuario4 = new Scanner(System.in);
 		String interacaoUsuario4;
-		System.out.printf("[1] REDUZIR A VERBA DE RECICLAGEM EM 80%\n[2] REDUZIR A VERBA DE RECICLAGEM EM 50%\n[3] REDUZIR A VERBA DE RECICLAGEM EM 25%\n[4] NADA\n");
+		System.out.printf("[1] REDUZIR A VERBA DE RECICLAGEM EM 80 POR CENTO\n[2] REDUZIR A VERBA DE RECICLAGEM EM 50 POR CENTO\n[3] REDUZIR A VERBA DE RECICLAGEM EM 25 POR CENTO \n[4] NADA\n");
 		interacaoUsuario4 = scanInteracaoUsuario4.nextLine();
 		
 		switch(interacaoUsuario4) {
@@ -453,10 +458,132 @@ public class Main {
 		} else if (bon.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
 			bon.gameOver();
+		} else {
+			System.out.println("EXPEDIENTE ENCERRADO");
+			System.out.println("A satisfação dos Industriais está em: " + bon.getSatisfacao());
+			System.out.println("A satisfação dos Ambientalistas está em: " + flo.getSatisfacao());
+			System.out.println("A satisfação de sua atual secretária está em: " + san.getSatisfacao());
 		}
 		
 		// LEVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO
 		Level level3 = new Level("NÍVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO");
 		level3.mostrarTitulo();
+		
+		Monologo monologo5 = new Monologo("Eu tive um pesadelo essa noite.\nEu estava dirigindo um carro elétrico até um apartamento que havia alugado em Ubatuba para passar as férias com a minha família. Tive uma discussão com a minha ex, nada muito acalorado. Decidimos que seria melhor se a nossa filha fosse com ela\nPor mais impossível que pareça, em algum ponto da serra, o volante ficou eletrizado. Impossível em termos de Física, eu podia jurar que um carro fazia uma gaiola de Faraday, mas sonhos não seguem regras. Não sei quantos joules de corrente elétrica passaram por mim, só sei que ficou tudo escuro de repente. Mas eu ainda estava sonhando. Ouvi vozes, uma delas era do Sr. Ricardo Bonsucesso parabenizando uma pessoa pelo trabalho bem feito.\nFoi nesse momento que me lembrei que a discussão com a minha ex havia sido sobre como eu não estava seguro e ela estava preocupada comigo. E quer saber o pior? Eu ainda tive que pegar um ônibus. A ideia de entrar no meu carro me fazia tremer demais pra conseguir dirigir. E a troco de quê escolhi o ônibus, se passei a viagem inteira achando que ia ser esfaqueado?");
+		monologo5.mostrarMonologo();
+		
+		Dialogo fala19 = new Dialogo(san, "Você tá com uma cara horrível.");
+		fala19.mostrarDialogo();
+		
+		Dialogo fala20 = new Dialogo(ply, "Obrigado, nasci com ela.");
+		fala20.mostrarDialogo();
+		
+		Dialogo fala21 = new Dialogo(san, "Tem certeza de que você não quer ir num médico, não? Não é muito recomendável pensar nas pautas de hoje com essa cara de cachorro pidão.");
+		fala21.mostrarDialogo();
+		
+		Dialogo fala22 = new Dialogo(ply, "E o que RAIOS aconteceu enquanto eu dormia pra virar a primeira pauta do dia?");
+		fala22.mostrarDialogo();
+		
+		Monologo monologo6 = new Monologo("Eu ouço alguém bater à porta. Antes que eu possa dizer qualquer coisa, ela tomba por terra.");
+		monologo6.mostrarMonologo();
+		
+		Dialogo fala23 = new Dialogo(bon, "Bonjour!");
+		fala23.mostrarDialogo();
+		
+		Dialogo fala24 = new Dialogo(ply, "O senhor arrombou a porta da prefeitura...?");
+		fala24.mostrarDialogo();
+		
+		Dialogo fala25 = new Dialogo(bon, "Arrombar? Non, non, non, eu apenas fiz uma force com meus shoulders quando percebi que ela não queria abrir.");
+		fala25.mostrarDialogo();
+		
+		Monologo monologo7 = new Monologo("Não foi um pesadelo. Foi tudo verdade, eu estou morto, e este é o meu Inferno.");
+		monologo7.mostrarMonologo();
+		
+		Dialogo fala26 = new Dialogo(flo, "Com licença...? Eu espero que não seja rude, eu vi a porta aberta e–");
+		fala26.mostrarDialogo();
+		
+		Dialogo fala27 = new Dialogo(bon, "Ah, é você, little girl. Mas que coincidência mais éstrangé.");
+		fala27.mostrarDialogo();
+		
+		Dialogo fala28 = new Dialogo(san, "Eu não estou gostando das vibes neste Chilli's esta noite. Eu acho que eu vou ind—");
+		fala28.mostrarDialogo();
+		
+		Dialogo fala29 = new Dialogo(ply, "NÃO, você FICA. Se pra mais nada, você fica por suporte moral. Eu quero entender por que, exatamente, esses dois entraram aqui sem mais e nem menos.");
+		fala29.mostrarDialogo();
+		
+		Dialogo fala30 = new Dialogo(bon, "Não desperdice o seu oxygéné com explicações, minha flower de esplendor. Eu cuido das explications. Sabe, monsiê le Préféité, sou eu quem faz essa cidade ir pra frente. Franquias de roupas, joias, mineração... de escái is de limite!");
+		fala30.mostrarDialogo();
+		
+		Dialogo fala31 = new Dialogo(bon, "E, veja bem, eu estava pensando... Todas essas interpraises e eu ainda não me aventurei no FUTURO: téquinolojí! Imagine: a nossa mineradora já vai providenciar tudo o que é necessário no processo — cobre, ouro, lítio, e todas essas coisas mequetrefes — e nós vamos transformar Anhanguera no pólo tecnológico do Brasil! Adeus, terceiro mundo!");
+		fala31.mostrarDialogo();
+		
+		Dialogo fala32 = new Dialogo(bon, "Não precisaríamos nem olhar muito longe! Temos uma big quantity desses minerais bem aqui em áreas que nunca foram exploradas antes! Estou falando de cavernas, estou falando de mares, tudo isso puramente anhanguerês!");
+		fala32.mostrarDialogo();
+		
+		Dialogo fala33 = new Dialogo(bon, "Mas existe um problema, sabe... Esta lady ao meu lado... Ela é contra o progresso.");
+		fala33.mostrarDialogo();
+		
+		Dialogo fala34 = new Dialogo(flo, "Eu sou contra essa mineração sem limites que a Bonsucesso Ltda. patrocina. Se ainda fosse por uma boa causa...");
+		fala34.mostrarDialogo();
+		
+		Dialogo fala35 = new Dialogo(bon, "É uma boa causa, lirou fren! O progresso colocará Anhanguera como uma titã de inovações tecnológicas, e esse creizi progrés necessita de minérios!");
+		fala35.mostrarDialogo();
+		
+		Dialogo fala36 = new Dialogo(flo, "Se o senhor pensa que computadores que só podem durar dois anos é progresso, então sim, a Bonsucesso Ltda. tratá progresso... O problema é que vem com ele.");
+		fala36.mostrarDialogo();
+		
+		Dialogo fala37 = new Dialogo(bon, "O que é que você tem contra money?");
+		fala37.mostrarDialogo();
+		
+		Dialogo fala38 = new Dialogo(ply, "[TOSSE]");
+		fala38.mostrarDialogo();
+		
+		Monologo monologo8 = new Monologo("Todo mundo olhou pra mim. Bom.");
+		monologo8.mostrarMonologo();
+		
+		Dialogo fala39 = new Dialogo(ply, "O que, exatamente, vocês querem de mim?");
+		fala39.mostrarDialogo();
+		
+		Dialogo fala40 = new Dialogo(bon, "Uma relaxação nas leis de exploração de minérios, é claro!");
+		fala40.mostrarDialogo();
+		
+		Dialogo fala41 = new Dialogo(flo, "E eu, o total oposto. O senhor já imaginou quanto lixo digital esse troca-troca vai gerar?");
+		fala41.mostrarDialogo();
+		
+		Dialogo fala42 = new Dialogo(ply, "Troca-troca?");
+		fala42.mostrarDialogo();
+		
+		Dialogo fala43 = new Dialogo(bon, "Bem, os compiuters que nós da Bonsucesso Ltda. criaremos não são EXATAMENTE soluções a longo-prazo... Mas as mudanças de um modelo para o outro valem muito a pena! Ou o senhor nunca trocou um celular velho?");
+		fala43.mostrarDialogo();
+		
+		Dialogo fala44 = new Dialogo(ply, "Eu... eu ainda uso um tijolão, na verdade.");
+		fala44.mostrarDialogo();
+		
+		Dialogo fala45 = new Dialogo(san, "É verdade, não tem nem o jogo da cobrinha.");
+		fala45.mostrarDialogo();
+		
+		Dialogo fala46 = new Dialogo(ply, "Como você sabe disso?");
+		fala46.mostrarDialogo();
+		
+		Dialogo fala47 = new Dialogo(san, "Confidencial.");
+		fala47.mostrarDialogo();
+		
+		Dialogo fala48 = new Dialogo(bon, "UM TIJOLÃO? EM TCHU TAUZEND TUENTI FOR?");
+		fala48.mostrarDialogo();
+		
+		Dialogo fala49 = new Dialogo(flo, "É, isso... isso é um pouco exagerado, senhor.");
+		fala49.mostrarDialogo();
+		
+		Monologo monologo9 = new Monologo("Ninguém entende a beleza de clicar várias vezes no teclado hoje em dia...");
+		monologo9.mostrarMonologo();
+		
+		Monologo monologo10 = new Monologo("Tudo bem, eu preciso decidir alguma coisa. Só queria que fechar os olhos me tornasse invisível por cinco segundos.");
+		monologo10.mostrarMonologo();
+		
+		Scanner scanInteracaoUsuario5 = new Scanner(System.in);
+		String interacaoUsuario5;
+		System.out.printf("[1] CONCORDAR COM RICARDO BONSUCESSO\n[2]CONCORDAR COM FLORA DA SILVA\n[3] DIZER QUE VAI PENSAR NISSO E NÃO PENSAR NISSO\n");
+		interacaoUsuario5 = scanInteracaoUsuario5.nextLine();
+
 	}
 }
