@@ -30,6 +30,7 @@ public class Main {
 		Dialogo fala3 = new Dialogo(ply, "... Obrigado, Sandra...");
 		fala3.mostrarDialogo();
 		
+		// 1º escolha do jogador
 		Scanner scanInteracaoUsuario1 = new Scanner(System.in);
 		String interacaoUsuario1;
 		System.out.printf("[1] LER A CARTA\n[2] PEDIR PARA RESUMIR\n");
@@ -113,6 +114,7 @@ public class Main {
 		Dialogo fala8 = new Dialogo(san, "... Ah. Ah é, eu brisei. Bem, fica o aviso pra próxima.");
 		fala8.mostrarDialogo();
 		
+		// 2º escolha do jogador
 		Scanner scanInteracaoUsuario2 = new Scanner(System.in);
 		String interacaoUsuario2;
 		System.out.printf("[1] AUMENTAR O ORÇAMENTO PARA A DRENAGEM \n[2] AUMENTAR O ORÇAMENTO PARA A RECICLAGEM\n[3] ENVIAR AJUDA COMUNITÁRIA\n[4] NADA\n");
@@ -231,6 +233,7 @@ public class Main {
 		Dialogo fimCapitulo1 = new Dialogo(ply, "Eu só espero que tudo dê certo...");
 		fimCapitulo1.mostrarDialogo();
 		
+		// Game over
 		if (san.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
 			san.gameOver();
@@ -257,6 +260,7 @@ public class Main {
 		Dialogo fala11 = new Dialogo(ply, "Ou não. Errei, fui moleque.");
 		fala11.mostrarDialogo();
 		
+		// 3º escolha do usuário
 		Scanner scanInteracaoUsuario3 = new Scanner(System.in);
 		String interacaoUsuario3;
 		System.out.printf("[1] PEDIR PARA ENTRAR\n[2] EXIGIR EXPLICAÇÕES\n");
@@ -316,6 +320,7 @@ public class Main {
 				falaEscolhaDois10.mostrarDialogo();
 				break;
 			default:
+				// ADICIONAR INTERAÇÃO DEFAULT
 				break;
 		}
 		
@@ -349,6 +354,7 @@ public class Main {
 		Dialogo fala18 = new Dialogo(san, "E o que você vai fazer?");
 		fala18.mostrarDialogo();
 		
+		// 4º escolha do jogador
 		Scanner scanInteracaoUsuario4 = new Scanner(System.in);
 		String interacaoUsuario4;
 		System.out.printf("[1] REDUZIR A VERBA DE RECICLAGEM EM 80 POR CENTO\n[2] REDUZIR A VERBA DE RECICLAGEM EM 50 POR CENTO\n[3] REDUZIR A VERBA DE RECICLAGEM EM 25 POR CENTO \n[4] NADA\n");
@@ -446,9 +452,11 @@ public class Main {
 				falaEscolhaQuatro11.mostrarDialogo();
 				break;
 			default:
+				// ADICIONAR INTERAÇÃO DEFAULT
 				break;
 		}
 		
+		// Game over
 		if (san.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
 			san.gameOver();
@@ -580,6 +588,7 @@ public class Main {
 		Monologo monologo10 = new Monologo("Tudo bem, eu preciso decidir alguma coisa. Só queria que fechar os olhos me tornasse invisível por cinco segundos.");
 		monologo10.mostrarMonologo();
 		
+		// 5º interação do jogador
 		Scanner scanInteracaoUsuario5 = new Scanner(System.in);
 		String interacaoUsuario5;
 		System.out.printf("[1] CONCORDAR COM RICARDO BONSUCESSO\n[2]CONCORDAR COM FLORA DA SILVA\n[3] DIZER QUE VAI PENSAR NISSO E NÃO PENSAR NISSO\n");
@@ -595,5 +604,30 @@ public class Main {
 			default:
 				break;
 		}
+		
+		
+		// Game over
+		if (san.getSatisfacao() <= 0) {
+			interludio.mostrarMonologo();
+			san.gameOver();
+		} else if (flo.getSatisfacao() <= 0) {
+			interludio.mostrarMonologo();
+			flo.gameOver();
+		} else if (bon.getSatisfacao() <= 0) {
+			interludio.mostrarMonologo();
+			bon.gameOver();
+		} else {
+			System.out.println("EXPEDIENTE ENCERRADO");
+			System.out.println("A satisfação dos Industriais está em: " + bon.getSatisfacao());
+			System.out.println("A satisfação dos Ambientalistas está em: " + flo.getSatisfacao());
+			System.out.println("A satisfação de sua atual secretária está em: " + san.getSatisfacao());
+		}
+		
+		// Scanner.close();
+		scanInteracaoUsuario1.close();
+		scanInteracaoUsuario2.close();
+		scanInteracaoUsuario3.close();
+		scanInteracaoUsuario4.close();
+		scanInteracaoUsuario5.close();
 	}
 }
