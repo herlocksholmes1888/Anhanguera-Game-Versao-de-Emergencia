@@ -596,12 +596,96 @@ public class Main {
 		
 		switch(interacaoUsuario5) {
 			case "1":
+				Dialogo falaEscolhaUm1 = new Dialogo(ply, "É, talvez eu precise mudar o meu celular para um mais novo, no fim das contas... E não vejo por que não poderia ser com um modelo da Bonsucesso Ltda.");
+				falaEscolhaUm1.mostrarDialogo();
+				
+				bon.variarSatisfacao(3, true);
+				
+				Dialogo falaEscolhaUm2 = new Dialogo(bon, "O senhor fez uma excelente escolha, monsiê le Préféité! E pode garantir que vai ter um grande desconto quando for lá na techstore!");
+				falaEscolhaUm2.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm3 = new Dialogo(ply, "Puxa, obriga–");
+				falaEscolhaUm3.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm4 = new Dialogo(bon, "Um descontasso de 5%!");
+				falaEscolhaUm4.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm5 = new Dialogo(ply, "É, Ícaro também sonhou alto e acabou queimado...");
+				falaEscolhaUm5.mostrarDialogo();
+				
+				flo.variarSatisfacao(2, false);
+				
+				Dialogo falaEscolhaUm6 = new Dialogo(ply, "Eu sinto muito, menina. Infelizmente, o desenvolvimento industrial desta cidade também é uma prioridade aqui na prefeitura.");
+				falaEscolhaUm6.mostrarDialogo();
+				
+				Dialogo falaEscolhaUm7 = new Dialogo(flo, "Eu espero que isso não tenha consequências de que o senhor se arrependa. Espero mesmo.");
+				falaEscolhaUm7.mostrarDialogo();
+				
+				san.variarSatisfacao(2, false);
+				
+				Dialogo falaEscolhaUm8 = new Dialogo(san, "Eu também espero.");
+				falaEscolhaUm8.mostrarDialogo();
 				break;
 			case "2":
+				Dialogo falaEscolhaDois1 = new Dialogo(ply, "Pessoalmente, gosto bastante do meu Nokia e não vejo por que trocar. Assim como não vejo por que uma loja de computadores e celulares anhanguerense valha mudar a lei.");
+				falaEscolhaDois1.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois2 = new Dialogo(bon, "O senhor tem certeza? Pode estar cometendo um erro.");
+				falaEscolhaDois2.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois3 = new Dialogo(ply, "É, tenho certeza. Sabe, anda ficando difícil de respirar nesses últimos e eu não vejo como um bando de explosões aqui perto vai melhorar o cenário atual");
+				falaEscolhaDois3.mostrarDialogo();
+				
+				flo.variarSatisfacao(3, true);
+				
+				Dialogo falaEscolhaDois4 = new Dialogo(flo, "O senhor tem razão. Obrigada, senhor prefeito.");
+				falaEscolhaDois4.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois5 = new Dialogo(ply, "É claro, o Sr. Bonsucesso ainda pode minerar nas regiões em que a extração de matéria é legalizada. Não é do meu interesse impedir seus empreendimentos.");
+				falaEscolhaDois5.mostrarDialogo();
+				
+				bon.variarSatisfacao(3, false);
+				
+				Dialogo falaEscolhaDois6 = new Dialogo(bon, "Sabe, a última vez em que alguém se opôs a uma ideia minha... Ele se arrependeu um pouco tarde demais para mudar as coisas entre nós.");
+				falaEscolhaDois6.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois7 = new Dialogo(ply, "E eu posso saber quem foi essa pessoa?");
+				falaEscolhaDois7.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois8 = new Dialogo(bon, "Ora, o seu predecessor, é claro!");
+				falaEscolhaDois8.mostrarDialogo();
+				
+				Dialogo falaEscolhaDois9 = new Dialogo(bon, "Um bom homem... Que Deus o tenha.");
+				falaEscolhaDois9.mostrarDialogo();
 				break;
 			case "3":
+				Dialogo falaEscolhaTres1 = new Dialogo(ply, "Vocês dois têm excelentes pontos. Por que não me descrevem os prós e os contras de cada um, e então eu vejo o que posso fazer daqui a alguns dias?");
+				falaEscolhaTres1.mostrarDialogo();
+				
+				flo.variarSatisfacao(1, false);
+				
+				Dialogo falaEscolhaTres2 = new Dialogo(flo, "É sério isso?");
+				falaEscolhaTres2.mostrarDialogo();
+				
+				bon.variarSatisfacao(1, false);
+				
+				Dialogo falaEscolhaTres3 = new Dialogo(bon, "Sei...");
+				falaEscolhaTres3.mostrarDialogo();
+				
+				Dialogo falaEscolhaTres4 = new Dialogo(ply, "Ei, é sério! Eu vou revisar cada um dos seus pontos e repassar meu parecer para vocês.");
+				falaEscolhaTres4.mostrarDialogo();
+				
+				Dialogo falaEscolhaTres5 = new Dialogo(flo, "Jura com a vida?");
+				falaEscolhaTres5.mostrarDialogo();
+				
+				Dialogo falaEscolhaTres6 = new Dialogo(ply, "Mas é claro, menina!");
+				falaEscolhaTres6.mostrarDialogo();
+				
+				Monologo monologoEscolhaTres = new Monologo("Não é como se eu me importasse tanto com isso a esse ponto...");
+				monologoEscolhaTres.mostrarMonologo();
 				break;
 			default:
+				// ADICIONAR INTERAÇÃO DEFAULT
 				break;
 		}
 		
@@ -617,10 +701,7 @@ public class Main {
 			interludio.mostrarMonologo();
 			bon.gameOver();
 		} else {
-			System.out.println("EXPEDIENTE ENCERRADO");
-			System.out.println("A satisfação dos Industriais está em: " + bon.getSatisfacao());
-			System.out.println("A satisfação dos Ambientalistas está em: " + flo.getSatisfacao());
-			System.out.println("A satisfação de sua atual secretária está em: " + san.getSatisfacao());
+			System.out.println("OBRIGADO POR JOGAR!");
 		}
 		
 		// Scanner.close();
