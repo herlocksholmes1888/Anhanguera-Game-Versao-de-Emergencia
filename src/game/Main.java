@@ -15,7 +15,7 @@ public class Main {
 		Ambientalista flo = new Ambientalista("FLORA DA SILVA", satisfacao);
 		
 		// LEVEL 1: CONTRA A CORRENTE
-		Level nivel1 = new Level("NÍVEL 1: CONTRA A CORRENTE");
+		Level nivel1 = new Level("==NÍVEL 1: CONTRA A CORRENTE==");
 		nivel1.mostrarTitulo();
 		
 		Dialogo fala1 = new Dialogo(san, "Seu Prefeito, chegou uma carta pra você! Parece que é de uma das vítimas da enchente, uma tal de Flora.");
@@ -241,14 +241,14 @@ public class Main {
 			interludio.mostrarMonologo();
 			flo.gameOver();
 		} else {
-			System.out.println("EXPEDIENTE ENCERRADO");
+			System.out.println("==EXPEDIENTE ENCERRADO==");
 			System.out.println("A satisfação dos Industriais está em: " + bon.getSatisfacao());
 			System.out.println("A satisfação dos Ambientalistas está em: " + flo.getSatisfacao());
 			System.out.println("A satisfação de sua atual secretária está em: " + san.getSatisfacao());
 		}
 		
 		// LEVEL 2: MALSUCESSO
-		Level level2 = new Level("NÍVEL 2: MALSUCESSO");
+		Level level2 = new Level("==NÍVEL 2: MALSUCESSO==");
 		level2.mostrarTitulo();
 		
 		Dialogo fala9 = new Dialogo(ply, "Dia novo, vida nova.");
@@ -320,7 +320,20 @@ public class Main {
 				falaEscolhaDois10.mostrarDialogo();
 				break;
 			default:
-				// ADICIONAR INTERAÇÃO DEFAULT
+				Dialogo falaCaseDefault1 = new Dialogo(ply, "...");
+				falaCaseDefault1.mostrarDialogo();
+				
+				Dialogo falaCaseDefault2 = new Dialogo(san, "...");
+				falaCaseDefault2.mostrarDialogo();
+				
+				Dialogo falaCaseDefault3 = new Dialogo(bon, "...");
+				falaCaseDefault3.mostrarDialogo();
+				
+				Dialogo falaCaseDefault4 = new Dialogo(bon, "... Por que ele tá encarando a gente desse jeito?");
+				falaCaseDefault4.mostrarDialogo();
+				
+				Dialogo falaCaseDefault5 = new Dialogo(san, "Sei lá, parece um mecanismo de defesa quando ele não sabe mais o que falar. Vai conversando com ele aí, vê se ele sai desse estado catatônico.");
+				falaCaseDefault5.mostrarDialogo();
 				break;
 		}
 		
@@ -457,24 +470,24 @@ public class Main {
 		}
 		
 		// Game over
-		if (san.getSatisfacao() <= 0) {
+		if (bon.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
-			san.gameOver();
+			bon.gameOver();
 		} else if (flo.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
 			flo.gameOver();
-		} else if (bon.getSatisfacao() <= 0) {
+		} else if (san.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
-			bon.gameOver();
+			san.gameOver();
 		} else {
-			System.out.println("EXPEDIENTE ENCERRADO");
+			System.out.println("==EXPEDIENTE ENCERRADO==");
 			System.out.println("A satisfação dos Industriais está em: " + bon.getSatisfacao());
 			System.out.println("A satisfação dos Ambientalistas está em: " + flo.getSatisfacao());
 			System.out.println("A satisfação de sua atual secretária está em: " + san.getSatisfacao());
 		}
 		
 		// LEVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO
-		Level level3 = new Level("NÍVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO");
+		Level level3 = new Level("==NÍVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO==");
 		level3.mostrarTitulo();
 		
 		Monologo monologo5 = new Monologo("Eu tive um pesadelo essa noite.\nEu estava dirigindo um carro elétrico até um apartamento que havia alugado em Ubatuba para passar as férias com a minha família. Tive uma discussão com a minha ex, nada muito acalorado. Decidimos que seria melhor se a nossa filha fosse com ela\nPor mais impossível que pareça, em algum ponto da serra, o volante ficou eletrizado. Impossível em termos de Física, eu podia jurar que um carro fazia uma gaiola de Faraday, mas sonhos não seguem regras. Não sei quantos joules de corrente elétrica passaram por mim, só sei que ficou tudo escuro de repente. Mas eu ainda estava sonhando. Ouvi vozes, uma delas era do Sr. Ricardo Bonsucesso parabenizando uma pessoa pelo trabalho bem feito.\nFoi nesse momento que me lembrei que a discussão com a minha ex havia sido sobre como eu não estava seguro e ela estava preocupada comigo. E quer saber o pior? Eu ainda tive que pegar um ônibus. A ideia de entrar no meu carro me fazia tremer demais pra conseguir dirigir. E a troco de quê escolhi o ônibus, se passei a viagem inteira achando que ia ser esfaqueado?");
@@ -591,7 +604,7 @@ public class Main {
 		// 5º interação do jogador
 		Scanner scanInteracaoUsuario5 = new Scanner(System.in);
 		String interacaoUsuario5;
-		System.out.printf("[1] CONCORDAR COM RICARDO BONSUCESSO\n[2]CONCORDAR COM FLORA DA SILVA\n[3] DIZER QUE VAI PENSAR NISSO E NÃO PENSAR NISSO\n");
+		System.out.printf("[1] CONCORDAR COM RICARDO BONSUCESSO\n[2] CONCORDAR COM FLORA DA SILVA\n[3] DIZER QUE VAI PENSAR NISSO E NÃO PENSAR NISSO\n");
 		interacaoUsuario5 = scanInteracaoUsuario5.nextLine();
 		
 		switch(interacaoUsuario5) {
@@ -681,7 +694,7 @@ public class Main {
 				Dialogo falaEscolhaTres6 = new Dialogo(ply, "Mas é claro, menina!");
 				falaEscolhaTres6.mostrarDialogo();
 				
-				Monologo monologoEscolhaTres = new Monologo("Não é como se eu me importasse tanto com isso a esse ponto...");
+				Monologo monologoEscolhaTres = new Monologo("Não é como se eu me importasse tanto a esse ponto...");
 				monologoEscolhaTres.mostrarMonologo();
 				break;
 			default:
@@ -691,17 +704,17 @@ public class Main {
 		
 		
 		// Game over
-		if (san.getSatisfacao() <= 0) {
+		if (bon.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
-			san.gameOver();
+			bon.gameOver();
 		} else if (flo.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
 			flo.gameOver();
-		} else if (bon.getSatisfacao() <= 0) {
+		} else if (san.getSatisfacao() <= 0) {
 			interludio.mostrarMonologo();
-			bon.gameOver();
+			san.gameOver();
 		} else {
-			System.out.println("OBRIGADO POR JOGAR!");
+			System.out.println("==OBRIGADO POR JOGAR!==");
 		}
 		
 		// Scanner.close();

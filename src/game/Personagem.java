@@ -35,20 +35,21 @@ public abstract class Personagem {
         return nome;
     }
 	
-	public void variarSatisfacao(int consequencias, boolean adicao) {
+	public void variarSatisfacao(int numeroAbsolutoVariacao, boolean adicao) {
 		int satisfacaoAntes = getSatisfacao();
-		int operacao = adicao ? consequencias : -consequencias;
-		int satisfacaoDepois = satisfacaoAntes + operacao;
+		int numeroVariacao = adicao ? numeroAbsolutoVariacao : -numeroAbsolutoVariacao;
+		int satisfacaoDepois = satisfacaoAntes + numeroVariacao;
 		setSatisfacao(satisfacaoDepois);
 		
-		int variacao = Math.abs(satisfacaoDepois - satisfacaoAntes);
+		int variacaoTotal = Math.abs(satisfacaoDepois - satisfacaoAntes);
 		
 		if (adicao == true) {
-			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacao + " PONTO(S) POSITIVO(S)");
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacaoTotal + " PONTO(S) POSITIVO(S)");
 		} else {
-			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacao + " PONTO(S) NEGATIVO(S)");
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacaoTotal + " PONTO(S) NEGATIVO(S)");
 		}
 	}
 	
 	public abstract void gameOver();
+	
 }
