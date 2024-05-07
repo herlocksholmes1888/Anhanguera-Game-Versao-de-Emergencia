@@ -1,28 +1,13 @@
 package game;
 
-public class Monologo {
-	private String monologo;
-	
-	public Monologo(String monologo) {
-		this.setMonologo(monologo);
-	}
+public class Monologo extends Fala {
+    public Monologo(String monologo) {
+        this.texto = monologo;
+    }
 
-	public void setMonologo(String monologo) {
-		this.monologo = monologo;
-	}
-	
-	public String getMonologo() {
-		return monologo;
-	}
-	
-	public void mostrarMonologo() {
-		System.out.println(monologo);
-		pressioneQualquerTeclaParaContinuar();
-	}
-	
-	private void pressioneQualquerTeclaParaContinuar() {
-        try {
-            System.in.read();
-        } catch(Exception e) { }  
-	}
+    @Override
+    public void mostrarFala() {
+        System.out.println(texto);
+        pressioneQualquerTeclaParaContinuar();
+    }
 }
