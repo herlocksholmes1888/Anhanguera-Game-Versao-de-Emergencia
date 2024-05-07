@@ -12,7 +12,7 @@ public abstract class Fala {
     }
 
     public abstract void mostrarFala();
-
+    
     protected void pressioneQualquerTeclaParaContinuar() {
         try {
             System.in.read();

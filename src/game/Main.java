@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		// VARIÁVEIS GLOBAIS/CONSTANTES
-		Monologo interludio = new Monologo("ALGUM TEMPO DEPOIS...");
 		int satisfacao = 3;
+		Monologo interludio = new Monologo("ALGUM TEMPO DEPOIS...");
 		 
 		// DECLARAÇÃO DOS PERSONAGENS
 		Player ply = new Player("WASHINGTON LUÍS", 0);
@@ -250,6 +250,7 @@ public class Main {
 		}
 		
 		// LEVEL 2: MALSUCESSO
+		System.out.print("\033\143");
 		Level level2 = new Level("==NÍVEL 2: MALSUCESSO==");
 		level2.mostrarTitulo();
 		
