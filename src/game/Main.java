@@ -388,7 +388,7 @@ public class Main {
 				Dialogo falaEscolhaUm3 = new Dialogo(ply, "O quê?");
 				falaEscolhaUm3.mostrarDialogo();
 				
-				Dialogo falaEscolhaUm4 = new Dialogo(san, "Nada, só mais do mesmo");
+				Dialogo falaEscolhaUm4 = new Dialogo(san, "Nada, só mais do mesmo.");
 				falaEscolhaUm4.mostrarDialogo();
 				break;
 			case "2":
@@ -443,6 +443,9 @@ public class Main {
 				Dialogo falaEscolhaQuatro6 = new Dialogo(ply, "Nada.");
 				falaEscolhaQuatro6.mostrarDialogo();
 				
+				bon.variarSatisfacao(1, false);
+				flo.variarSatisfacao(2, true);
+				
 				Dialogo falaEscolhaQuatro7 = new Dialogo(san, "Como assim nada?");
 				falaEscolhaQuatro7.mostrarDialogo();
 				
@@ -458,6 +461,8 @@ public class Main {
 				Dialogo falaEscolhaQuatro10 = new Dialogo(ply, "Algo contra?");
 				falaEscolhaQuatro10.mostrarDialogo();
 				
+				san.variarSatisfacao(1, true);
+				
 				Dialogo falaEscolhaQuatro11 = new Dialogo(san, "Você é idealista demais pra merecer um voto sério.");
 				
 				Monologo monologoEscolhaQuatro2 = new Monologo("ELA CONSEGUE SORRIR?");
@@ -465,7 +470,16 @@ public class Main {
 				falaEscolhaQuatro11.mostrarDialogo();
 				break;
 			default:
-				// ADICIONAR INTERAÇÃO DEFAULT
+				Dialogo falaDefaultCase1 = new Dialogo(san, "... Eles estão esperando uma resposta pra hoje, sabe?");
+				falaDefaultCase1.mostrarDialogo();
+				
+				Dialogo falaDefaultCase2 = new Dialogo(ply, "Eu sei, eu sei. Eu só tava brincando com você, Sandrinha.");
+				falaDefaultCase2.mostrarDialogo();
+				
+				san.variarSatisfacao(1, false);
+				
+				Dialogo falaDefaultCase3 = new Dialogo(san, "A gente vota no candidato achando que ele sabe que brincadeira tem hora.");
+				falaDefaultCase3.mostrarDialogo();
 				break;
 		}
 		
@@ -490,9 +504,21 @@ public class Main {
 		Level level3 = new Level("==NÍVEL 3: O LIXO DE UM HOMEM É O DINHEIRO DE OUTRO==");
 		level3.mostrarTitulo();
 		
-		Monologo monologo5 = new Monologo("Eu tive um pesadelo essa noite.\nEu estava dirigindo um carro elétrico até um apartamento que havia alugado em Ubatuba para passar as férias com a minha família. Tive uma discussão com a minha ex, nada muito acalorado. Decidimos que seria melhor se a nossa filha fosse com ela\nPor mais impossível que pareça, em algum ponto da serra, o volante ficou eletrizado. Impossível em termos de Física, eu podia jurar que um carro fazia uma gaiola de Faraday, mas sonhos não seguem regras. Não sei quantos joules de corrente elétrica passaram por mim, só sei que ficou tudo escuro de repente. Mas eu ainda estava sonhando. Ouvi vozes, uma delas era do Sr. Ricardo Bonsucesso parabenizando uma pessoa pelo trabalho bem feito.\nFoi nesse momento que me lembrei que a discussão com a minha ex havia sido sobre como eu não estava seguro e ela estava preocupada comigo. E quer saber o pior? Eu ainda tive que pegar um ônibus. A ideia de entrar no meu carro me fazia tremer demais pra conseguir dirigir. E a troco de quê escolhi o ônibus, se passei a viagem inteira achando que ia ser esfaqueado?");
+		Monologo monologo5 = new Monologo("Eu tive um pesadelo essa noite.");
 		monologo5.mostrarMonologo();
-		
+
+		Monologo monologo6 = new Monologo("Eu estava dirigindo um carro elétrico até um apartamento que havia alugado em Ubatuba para passar as férias com a minha família. Tive uma discussão com a minha ex, nada muito acalorado. Decidimos que seria melhor se a nossa filha fosse com ela");
+		monologo6.mostrarMonologo();
+
+		Monologo monologo7 = new Monologo("Por mais impossível que pareça, em algum ponto da serra, o volante ficou eletrizado. Impossível em termos de Física, eu podia jurar que um carro fazia uma gaiola de Faraday, mas sonhos não seguem regras. Não sei quantos joules de corrente elétrica passaram por mim, só sei que ficou tudo escuro de repente. Mas eu ainda estava sonhando.");
+		monologo7.mostrarMonologo();
+
+		Monologo monologo8 = new Monologo("Ouvi vozes, uma delas era do Sr. Ricardo Bonsucesso parabenizando uma pessoa pelo trabalho bem feito.");
+		monologo8.mostrarMonologo();
+
+		Monologo monologo9 = new Monologo("Foi nesse momento que me lembrei que a discussão com a minha ex havia sido sobre como eu não estava seguro e ela estava preocupada comigo. E quer saber o pior? Eu ainda tive que pegar um ônibus. A ideia de entrar no meu carro me fazia tremer demais pra conseguir dirigir. E a troco de quê escolhi o ônibus, se passei a viagem inteira achando que ia ser esfaqueado?");
+		monologo9.mostrarMonologo();
+
 		Dialogo fala19 = new Dialogo(san, "Você tá com uma cara horrível.");
 		fala19.mostrarDialogo();
 		
@@ -505,8 +531,8 @@ public class Main {
 		Dialogo fala22 = new Dialogo(ply, "E o que RAIOS aconteceu enquanto eu dormia pra virar a primeira pauta do dia?");
 		fala22.mostrarDialogo();
 		
-		Monologo monologo6 = new Monologo("Eu ouço alguém bater à porta. Antes que eu possa dizer qualquer coisa, ela tomba por terra.");
-		monologo6.mostrarMonologo();
+		Monologo monologo10 = new Monologo("Eu ouço alguém bater à porta. Antes que eu possa dizer qualquer coisa, ela tomba por terra.");
+		monologo10.mostrarMonologo();
 		
 		Dialogo fala23 = new Dialogo(bon, "Bonjour!");
 		fala23.mostrarDialogo();
@@ -517,8 +543,8 @@ public class Main {
 		Dialogo fala25 = new Dialogo(bon, "Arrombar? Non, non, non, eu apenas fiz uma force com meus shoulders quando percebi que ela não queria abrir.");
 		fala25.mostrarDialogo();
 		
-		Monologo monologo7 = new Monologo("Não foi um pesadelo. Foi tudo verdade, eu estou morto, e este é o meu Inferno.");
-		monologo7.mostrarMonologo();
+		Monologo monologo11 = new Monologo("Não foi um pesadelo. Foi tudo verdade, eu estou morto, e este é o meu Inferno.");
+		monologo11.mostrarMonologo();
 		
 		Dialogo fala26 = new Dialogo(flo, "Com licença...? Eu espero que não seja rude, eu vi a porta aberta e–");
 		fala26.mostrarDialogo();
@@ -559,8 +585,8 @@ public class Main {
 		Dialogo fala38 = new Dialogo(ply, "[TOSSE]");
 		fala38.mostrarDialogo();
 		
-		Monologo monologo8 = new Monologo("Todo mundo olhou pra mim. Bom.");
-		monologo8.mostrarMonologo();
+		Monologo monologo12 = new Monologo("Todo mundo olhou pra mim. Bom.");
+		monologo12.mostrarMonologo();
 		
 		Dialogo fala39 = new Dialogo(ply, "O que, exatamente, vocês querem de mim?");
 		fala39.mostrarDialogo();
@@ -595,11 +621,11 @@ public class Main {
 		Dialogo fala49 = new Dialogo(flo, "É, isso... isso é um pouco exagerado, senhor.");
 		fala49.mostrarDialogo();
 		
-		Monologo monologo9 = new Monologo("Ninguém entende a beleza de clicar várias vezes no teclado hoje em dia...");
-		monologo9.mostrarMonologo();
+		Monologo monologo13 = new Monologo("Ninguém entende a beleza de clicar várias vezes no teclado hoje em dia...");
+		monologo13.mostrarMonologo();
 		
-		Monologo monologo10 = new Monologo("Tudo bem, eu preciso decidir alguma coisa. Só queria que fechar os olhos me tornasse invisível por cinco segundos.");
-		monologo10.mostrarMonologo();
+		Monologo monologo14 = new Monologo("Tudo bem, eu preciso decidir alguma coisa. Só queria que fechar os olhos me tornasse invisível por cinco segundos.");
+		monologo14.mostrarMonologo();
 		
 		// 5º interação do jogador
 		Scanner scanInteracaoUsuario5 = new Scanner(System.in);
@@ -698,7 +724,22 @@ public class Main {
 				monologoEscolhaTres.mostrarMonologo();
 				break;
 			default:
-				// ADICIONAR INTERAÇÃO DEFAULT
+				Dialogo falaDefaultCase1 = new Dialogo(san, "... É melhor vocês irem embora, ele fica assim quando tá indeciso.");
+				falaDefaultCase1.mostrarDialogo();
+				
+				Dialogo falaDefaultCase2 = new Dialogo(flo, "Catatônico assim?");
+				falaDefaultCase2.mostrarDialogo();
+				
+				bon.variarSatisfacao(1, false);
+				
+				Dialogo falaDefaultCase3 = new Dialogo(bon, "No meu tempo, chamavam isso de não saber ser macho.");
+				falaDefaultCase3.mostrarDialogo();
+				
+				Dialogo falaDefaultCase4 = new Dialogo(flo, "O senhor precisa de ajuda com essa ansiedade, Seu Prefeito. Urgente.");
+				falaDefaultCase4.mostrarDialogo();
+				
+				Monologo monologoDefaultCase1 = new Monologo("Eu esqueci de tomar meus remédios antes de vir. Burro, burro, burro!");
+				monologoDefaultCase1.mostrarMonologo();
 				break;
 		}
 		
