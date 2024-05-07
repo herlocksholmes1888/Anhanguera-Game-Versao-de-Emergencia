@@ -48,8 +48,11 @@ public class Main {
 				Monologo carta = new Monologo("Senhor Prefeito,\nVenho por meio desta informá-lo de um problema que, acredito, apenas o senhor pode resolver.\nHá dois dias, houve uma enchente na cidade, resultado de uma chuva torrencial que afetou particularmente a região da periferia. Todo mundo que conheço perdeu alguma coisa ou alguém.\nPor isso, tenho uma exigência a fazer: gostaria que o senhor aumentasse o orçamento destinado à drenagem da nossa cidade. Se não for possível, então encaminhar um maior investimento à coleta de lixo, já que ele também é um dos responsáveis.\nSei que essas coisas não costumam ser prioridade em Anhanguera, mas é justamente por essa falta de cuidado que a enchente aconteceu. O senhor fez ouvir o que os Ambientalistas tinham a dizer parte da sua campanha. Transforme sua promessa em ações. Sem as ações, promessas não passam de palavras.\nTodo mentiroso sabe falar.\nAtt. Flora da Silva");
 				carta.mostrarMonologo();
 				
-				Monologo monologo2 = new Monologo("...\n" + ".....\n" + ".........");
-				monologo2.mostrarMonologo();
+				Monologo reacaoCarta1 = new Monologo("...");
+				reacaoCarta1.mostrarMonologo();
+				
+				Monologo reacaoCarta2 = new Monologo(".......");
+				reacaoCarta2.mostrarMonologo();
 				
 				Dialogo falaEscolhaUm3 = new Dialogo(san, "Por que tu tá no Facebook, Seu Prefeito?");
 				falaEscolhaUm3.mostrarDialogo();

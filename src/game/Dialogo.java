@@ -28,5 +28,12 @@ public class Dialogo {
 	
 	public void mostrarDialogo() {
 		System.out.println(nome + ": " + dialogo);
+		pressioneQualquerTeclaParaContinuar();
+	}
+	
+	private void pressioneQualquerTeclaParaContinuar() {
+        try {
+            System.in.read();
+        } catch(Exception e) { }  
 	}
 }

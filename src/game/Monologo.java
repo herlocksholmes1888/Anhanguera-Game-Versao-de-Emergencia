@@ -17,5 +17,12 @@ public class Monologo {
 	
 	public void mostrarMonologo() {
 		System.out.println(monologo);
+		pressioneQualquerTeclaParaContinuar();
+	}
+	
+	private void pressioneQualquerTeclaParaContinuar() {
+        try {
+            System.in.read();
+        } catch(Exception e) { }  
 	}
 }

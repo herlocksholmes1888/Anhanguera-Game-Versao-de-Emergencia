@@ -44,9 +44,9 @@ public abstract class Personagem {
 		int variacaoTotal = Math.abs(satisfacaoDepois - satisfacaoAntes);
 		
 		if (adicao == true) {
-			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacaoTotal + " PONTO(S) POSITIVO(S)");
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacaoTotal + " PONTO(S) POSITIVO(S)\n");
 		} else {
-			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacaoTotal + " PONTO(S) NEGATIVO(S)");
+			System.out.println("A SATISFAÇÃO DE " + nome + " VARIOU EM " + variacaoTotal + " PONTO(S) NEGATIVO(S)\n");
 		}
 	}
 	
