@@ -16,6 +16,14 @@ public class Level {
 	}
 	
 	public void mostrarTitulo() {
+		if (!this.titulo.equals("==NÍVEL 1: CONTRA A CORRENTE==")) {
+			apagarTela();
+		}
+		
 		System.out.println(titulo);
+	}
+	
+	public void apagarTela() {
+        for (int i = 0; i < 50; ++i) System.out.println();
 	}
 }
